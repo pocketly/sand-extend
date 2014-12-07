@@ -56,7 +56,7 @@ console.log(cat.speak());
  1. Install it:
 
     ```bash
-    $ npm install pk-extend -S
+    $ npm install sand-extend -S
     ```
 
  2. Require it and use:
@@ -73,7 +73,7 @@ console.log(cat.speak());
 Extend supports multiple levels of inheritance but you **can't** call _this.super()_ in all constructors as it has an infinite loop issue. _this.super()_ can still be called in all methods though, an infinite number deep.
 
 ## Tests
-To run the tests for _pk-extend_ simply run:
+To run the tests for _sand-extend_ simply run:
 ```bash
 $ npm test
 ```
