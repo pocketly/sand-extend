@@ -1,0 +1,33 @@
+{
+  "name": "sand-extend",
+  "version": "0.0.1",
+  "description": "Class Inheritance made simple",
+  "main": "index.js",
+  "scripts": {
+    "test": "make test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:pocketly/sand-extend.git"
+  },
+  "keywords": [
+    "sand",
+    "classes",
+    "inheritance",
+    "extend",
+    "inherit"
+  ],
+  "author": "Kevin Smithson <ksmithson@pocketly.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pocketly/sand-extend/issues"
+  },
+  "homepage": "https://github.com/pocketly/sand-extend",
+  "dependencies": {
+    "lodash": "^2.4.1"
+  },
+  "devDependencies": {
+    "mocha": "^2.0.1",
+    "should": "^4.3.0"
+  }
+}
