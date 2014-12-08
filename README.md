@@ -1,4 +1,5 @@
 
+[![Build Status](https://travis-ci.org/pocketly/sand-extend.svg?branch=master)](https://travis-ci.org/pocketly/sand-extend) [![npm version](https://badge.fury.io/js/sand-extend.svg)](http://badge.fury.io/js/sand-extend)
 # sand-extend
 
 _sand-extend_ offers a simple way to have class inheritance in javascript.  It works well with and without the sand framework.
