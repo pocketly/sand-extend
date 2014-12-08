@@ -4,7 +4,7 @@ var Animal = require('./extend/Animal');
 var Dog = require('./extend/Dog');
 var Cat = require('./extend/Cat');
 
-describe('Inheritance', function() {
+describe('Extend Inheritance', function() {
   var dog = new Dog('Terrie');
   var cat = new Cat('Hana');
 
