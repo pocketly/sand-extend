@@ -9,6 +9,14 @@ var Animal = Class.extend(EventEmitter, {
   speak: function() {
     return 'My name is ' + this.name;
   }
+}, {
+  food: 'what does it eat?',
+  factory: function() {
+    return new this();
+  },
+  overrideMe: function() {
+    return 'please override';
+  }
 });
 
 exports = module.exports = Animal;

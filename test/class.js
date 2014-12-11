@@ -2,6 +2,7 @@ var Animal = require('./class/Animal');
 var Dog = require('./class/Dog');
 var Cat = require('./class/Cat');
 var Collie = require('./class/Collie');
+var _ = require('lodash');
 
 describe('Class Inheritance', function() {
   var dog = new Dog('Terrie');
@@ -22,6 +23,17 @@ describe('Class Inheritance', function() {
 
   it('should call the parent constructor if you don\'t supply one', function() {
     collie.name.should.be.equal('Ollie');
+  });
+
+  it('should have the parent static properties/methods', function() {
+    Animal.food.should.be.a.String;
+    Animal.factory.should.be.a.Function;
+    Animal.factory().should.be.instanceOf(Animal);
+
+    Dog.food.should.be.a.String;
+    Dog.factory.should.be.a.Function;
+    Dog.factory().should.be.instanceOf(Dog);
+    Dog.overrideMe().should.match(/please override.*dog/);
   });
 
   it('should handle super correctly', function() {

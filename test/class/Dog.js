@@ -16,6 +16,12 @@ var Dog = Animal.extend({
   doAction: function() {
     this.speak();
   }
+
+}, {
+
+  overrideMe: function() {
+    return this.super() + ' dog is overriding';
+  }
 });
 
 exports = module.exports = Dog;
