@@ -1,6 +1,6 @@
 {
   "name": "sand-extend",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Class Inheritance made simple",
   "main": "index.js",
   "scripts": {
