@@ -7,6 +7,14 @@ var Dog = Animal.extend({
 
   speak: function() {
     return this.super() + ' and ' + 'I Bark';
+  },
+
+  eat: function() {
+    return 'I am eating';
+  },
+
+  doAction: function() {
+    this.speak();
   }
 });
 

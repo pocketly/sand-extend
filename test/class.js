@@ -22,5 +22,14 @@ describe('Class Inheritance', function() {
 
   it('should call the parent constructor if you don\'t supply one', function() {
     collie.name.should.be.equal('Ollie');
-  })
+  });
+
+  it('should handle super correctly', function() {
+    try {
+      collie.doAction();
+      true.should.be.ok;
+    } catch(e) {
+      false.should.be.ok;
+    }
+  });
 });
