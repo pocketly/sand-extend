@@ -44,4 +44,12 @@ describe('Class Inheritance', function() {
       false.should.be.ok;
     }
   });
+
+  it('should inherit outside class properly', function(done) {
+    var Emitter = new (require('./class/Emitter'))();
+    var name = 'event';
+    Emitter.on(name, function() {
+      done();
+    }).sendEvent(name);
+  })
 });
